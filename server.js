@@ -21,11 +21,11 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use((req, res, next) => {
-    res.render('maintenance.hbs', {
-        title: 'The Site is on Maintenace mode we will back soon!'
-    });
-});
+// app.use((req, res, next) => {
+//     res.render('maintenance.hbs', {
+//         title: 'The Site is on Maintenace mode we will back soon!'
+//     });
+// });
 
 app.use(express.static(__dirname + '/public'));
 
